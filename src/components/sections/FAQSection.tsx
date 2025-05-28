@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 interface FAQItemProps {
@@ -49,7 +50,7 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-[rgba(243,233,222,1)] flex w-full flex-col items-center justify-center mt-2.5 p-20 max-md:max-w-full max-md:px-5">
+    <section id="faq" className="bg-[rgba(243,233,222,1)] flex w-full flex-col items-center justify-center mt-2.5 p-20 max-md:max-w-full max-md:px-5">
       <div className="flex w-[672px] max-w-full flex-col items-stretch pt-[7px]">
         <h2 className="text-black text-[32px] font-normal leading-none text-center self-center">
           FAQ
