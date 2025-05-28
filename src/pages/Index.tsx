@@ -1,13 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Navigation } from '@/components/Navigation';
+import { HeroSection } from '@/components/sections/HeroSection';
+import { FeaturesSection } from '@/components/sections/FeaturesSection';
+import { CartridgeSection } from '@/components/sections/CartridgeSection';
+import { SustainabilitySection } from '@/components/sections/SustainabilitySection';
+import { HowItWorksSection } from '@/components/sections/HowItWorksSection';
+import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
+import { PricingSection } from '@/components/sections/PricingSection';
+import { FAQSection } from '@/components/sections/FAQSection';
+import { TransitionSection } from '@/components/sections/TransitionSection';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <main className="bg-white overflow-hidden rounded-lg border-[rgba(206,212,218,1)] border-solid border-2">
+      <div className="bg-[rgba(0,0,0,0)] w-full max-md:max-w-full">
+        <HeroSection />
+        <FeaturesSection />
+        <CartridgeSection />
+        <SustainabilitySection />
+        <HowItWorksSection />
+        <TestimonialsSection />
+        <PricingSection />
+        <FAQSection />
+        <TransitionSection />
+        <Navigation />
       </div>
-    </div>
+    </main>
   );
 };
 
