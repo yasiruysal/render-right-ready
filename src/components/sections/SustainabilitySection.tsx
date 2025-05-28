@@ -7,7 +7,7 @@ export const SustainabilitySection: React.FC = () => {
         <div className="w-6/12 max-md:w-full max-md:ml-0">
           <div className="flex grow flex-col items-center w-full px-20 max-md:max-w-full max-md:mt-10 max-md:px-5">
             <img
-              src="https://i.ibb.co/7xPzLYdx/Chat-GPT-Image-May-28-2025-07-08-08-PM-1.png%3DplaceholderIfAbsent=true"
+              src="https://i.ibb.co/fVL1ZdXG/Chat-GPT-Image-May-28-2025-07-34-50-PM.png%3DplaceholderIfAbsent=true"
               className="aspect-[1.42] object-contain w-[340px] max-w-full rounded-lg"
               alt="Sustainable refill pods"
             />
