@@ -7,7 +7,7 @@ export const SustainabilitySection: React.FC = () => {
         <div className="w-6/12 max-md:w-full max-md:ml-0">
           <div className="flex grow flex-col items-center w-full px-20 max-md:max-w-full max-md:mt-10 max-md:px-5">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/67fdb831adb7f5fe90bdaab19daf6342fbff9a41?placeholderIfAbsent=true"
+              src="https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-1ac4-620a-a813-bc1762dfaf13/raw?se=2025-05-28T16%3A04%3A56Z&sp=r&sv=2024-08-04&sr=b&scid=6b44fcb7-10e0-5cdf-938c-5c914cfbe7a6&skoid=76024c37-11e2-4c92-aa07-7e519fbe2d0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-27T21%3A14%3A15Z&ske=2025-05-28T21%3A14%3A15Z&sks=b&skv=2024-08-04&sig=Tpj30JwE69CujeIMJu9fJ1Q3vJ/s0r670CJj3uzpVxw%3DplaceholderIfAbsent=true"
               className="aspect-[1.42] object-contain w-[340px] max-w-full rounded-lg"
               alt="Sustainable refill pods"
             />
