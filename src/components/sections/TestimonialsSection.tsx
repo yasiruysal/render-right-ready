@@ -14,7 +14,7 @@ export const TestimonialsSection: React.FC = () => {
       name: "Taylor R. – Travel Consultant",
       rating: "4.5 / 5",
       text: "Finally, a toothbrush I can toss in my carry-on—no leaks, instant foam, and way less plastic.",
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/placeholder-1?placeholderIfAbsent=true"
+      image: "https://i.ibb.co/5hDBqQDZ/Chat-GPT-Image-May-28-2025-05-57-25-PM-1.png?placeholderIfAbsent=true"
     },
     {
       name: "Leo D. – Travel Consultant", 
@@ -26,7 +26,7 @@ export const TestimonialsSection: React.FC = () => {
       name: "Monica S. – Product Designer",
       rating: "5 / 5", 
       text: "Nuvé looks gorgeous on my sink, but more importantly the CO₂ foam leaves my mouth squeaky clean.",
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/placeholder-2?placeholderIfAbsent=true"
+      image: "https://i.ibb.co/TDTw724R/Chat-GPT-Image-May-28-2025-05-55-36-PM-1.png?placeholderIfAbsent=true"
     }
   ];
 
