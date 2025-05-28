@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 
 interface FAQItemProps {
   question: string;
+  answer: string;
   isOpen: boolean;
   onToggle: () => void;
 }
 
-const FAQItem: React.FC<FAQItemProps> = ({ question, isOpen, onToggle }) => (
+const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle }) => (
   <div className="bg-white border border flex w-full flex-col items-stretch justify-center mt-5 px-[25px] py-[21px] rounded-xl border-solid max-md:max-w-full max-md:px-5">
     <button
       className="flex w-full items-stretch gap-5 flex-wrap justify-between px-px py-[5px] max-md:max-w-full"
@@ -25,6 +26,13 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, isOpen, onToggle }) => (
         />
       </div>
     </button>
+    {isOpen && (
+      <div className="mt-4 px-2 pb-2">
+        <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
+          {answer}
+        </p>
+      </div>
+    )}
   </div>
 );
 
@@ -32,11 +40,26 @@ export const FAQSection: React.FC = () => {
   const [openItems, setOpenItems] = useState<Set<number>>(new Set());
 
   const faqItems = [
-    "TSA safety?",
-    "Uses per pod?",
-    "Organic vs fluoride?",
-    "Recycling info?",
-    "Battery-free details?"
+    {
+      question: "TSA safety?",
+      answer: "Yes — Nuvé is TSA-compliant. Each refill pod contains under 30 mL of foam-concentrated toothpaste, making it perfectly safe to carry in your hand luggage for air travel."
+    },
+    {
+      question: "Uses per pod?",
+      answer: "Each pod delivers approximately 50–60 uses, depending on how much foam is dispensed per brushing. That's about 2–3 weeks of daily use."
+    },
+    {
+      question: "Organic vs fluoride?",
+      answer: "We offer two formulas to match your preference:\n\nOrganic: 100% botanical ingredients, fluoride-free. Ideal for natural care.\n\nWhitening / Fresh: Balanced fluoride included for enamel strength and whitening."
+    },
+    {
+      question: "Recycling info?",
+      answer: "Our pods are made from recyclable, BPA-free plastic. You can either:\n\nDrop them in your local recycling bin (check local rules), or\n\nReturn used pods to us for closed-loop recycling via our takeback program."
+    },
+    {
+      question: "Battery-free details?",
+      answer: "Nuvé's dispensing system is battery-free and powered by a CO₂ pressure capsule integrated into each cartridge. That means fewer electronics, no charging, and a more eco-friendly footprint."
+    }
   ];
 
   const toggleItem = (index: number) => {
@@ -56,10 +79,11 @@ export const FAQSection: React.FC = () => {
           FAQ
         </h2>
         <div className="mt-[47px] max-md:max-w-full max-md:mt-10">
-          {faqItems.map((question, index) => (
+          {faqItems.map((item, index) => (
             <FAQItem
               key={index}
-              question={question}
+              question={item.question}
+              answer={item.answer}
               isOpen={openItems.has(index)}
               onToggle={() => toggleItem(index)}
             />
