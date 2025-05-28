@@ -16,17 +16,14 @@ export const SustainabilitySection: React.FC = () => {
         <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
           <div className="flex flex-col self-stretch items-stretch text-black font-normal w-full my-auto pr-[13px] pt-[7px] pb-5 max-md:max-w-full max-md:mt-10">
             <h2 className="text-[32px] leading-none">
-              Refill, Reduce, Repeat
+              Sustainable by Design.
             </h2>
             <p className="text-xs leading-loose mt-[34px] max-md:max-w-full">
               <span className="text-[20px] text-black">
-                Refill monthly, reduce plastic by
-              </span>
-              <span className="text-[20px] text-[rgba(91,114,71,1)]">
-                {" "}70%
+                Single-use CO₂ pods crafted for a cleaner planet. Designed for effortless recycling—no rinsing needed <br />
               </span>
               <span className="text-[20px] text-black">
-                {" "}. Plant-based, recyclable pods.
+                Our CO₂ pods are made from recyclable materials, ensuring a sustainable brushing experience. Simply place the used pod in our recycling bag and drop it off at any collection point. It's that easy to make a difference.
               </span>
             </p>
           </div>
