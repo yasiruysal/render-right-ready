@@ -54,7 +54,7 @@ export const HowItWorksSection: React.FC = () => {
           <div className="w-full lg:w-6/12 lg:ml-5 max-md:w-full max-md:ml-0 mt-8 lg:mt-0">
             <div className="flex grow flex-col items-center w-full px-4 sm:px-10 lg:px-20 max-md:max-w-full">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/d36afd7c45ccc4bbf0f790e97b6ca26527b5f0da?placeholderIfAbsent=true"
+                src="https://i.hizliresim.com/phs7ti3.png?placeholderIfAbsent=true"
                 className="aspect-[1] object-contain w-64 sm:w-72 lg:w-80 max-w-full rounded-[45px]"
                 alt="How Nuvé works demonstration"
               />
