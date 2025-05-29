@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
             <div className="flex grow flex-col items-center justify-center w-full px-20 py-10 max-md:max-w-full max-md:mt-10 max-md:px-5">
               <div className="flex flex-col shadow-[0px_4px_6px_rgba(0,0,0,0.1)] relative aspect-[0.81] w-[340px] max-w-full rounded-xl">
                 <img
-                  src="https://iili.io/3pDPVcP.md.png?placeholderIfAbsent=true"
+                  src="https://i.hizliresim.com/ijqe69k.png?placeholderIfAbsent=true"
                   className="absolute h-full w-full object-cover inset-0"
                   alt="Nuvé toothbrush background"
                 />
