@@ -37,7 +37,7 @@ export const HeroSection: React.FC = () => {
                 <button className="border flex items-stretch gap-2 grow shrink basis-auto px-[29px] py-[18px] rounded-full border-[rgba(91,114,71,1)] border-solid max-md:px-5 hover:bg-[rgba(91,114,71,0.05)] transition-colors">
                   <div className="flex min-h-[18px] items-center overflow-hidden justify-center">
                     <img
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/357a62a656ba11d88fdac734e1bd943ba0c60c67?placeholderIfAbsent=true"
+                      src="https://i.ibb.co/hJPFLkRR/20250528-1900-Premium-Toothbrush-Handle-remix-01jwbsvspgenr9xzxb54xsv2c0-1.png?placeholderIfAbsent=true"
                       className="aspect-[1] object-contain w-[18px] self-stretch my-auto"
                       alt="Play icon"
                     />
