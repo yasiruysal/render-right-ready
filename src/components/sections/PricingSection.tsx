@@ -4,7 +4,7 @@ import { OutOfStockDialog } from '../OutOfStockDialog';
 
 export const PricingSection: React.FC = () => {
   const [subscriptionEnabled, setSubscriptionEnabled] = useState(true);
-  const [subscriptionInterval, setSubscriptionInterval] = useState('30 days');
+  const [subscriptionInterval, setSubscriptionInterval] = useState('90 days');
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handlePreOrderClick = () => {
@@ -28,7 +28,7 @@ export const PricingSection: React.FC = () => {
                 €129
               </div>
               <div className="text-[rgba(27,27,27,1)] text-lg sm:text-xl leading-5 sm:mt-5">
-                Starter Kit (Handle + 4 pods)
+                Starter Kit (Handle + 2 heads + 4 pods)
               </div>
             </div>
             <div className="flex flex-col items-center text-base sm:text-lg mt-4 px-2 sm:px-[68px] max-md:max-w-full">
@@ -72,9 +72,9 @@ export const PricingSection: React.FC = () => {
                       className="bg-white border flex items-stretch gap-[9px] px-2.5 py-1.5 rounded-full border-[rgba(91,114,71,0.3)] border-solid appearance-none pr-8 cursor-pointer"
                       disabled={!subscriptionEnabled}
                     >
-                      <option value="30 days">30 days</option>
-                      <option value="60 days">60 days</option>
                       <option value="90 days">90 days</option>
+                      <option value="180 days">180 days</option>
+                      <option value="270 days">270 days</option>
                     </select>
                     <img
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a08b63c81488ff70edfba6632c6ebe3f3045dbc?placeholderIfAbsent=true"
