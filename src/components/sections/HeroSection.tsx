@@ -37,7 +37,7 @@ export const HeroSection: React.FC = () => {
                 <button className="border flex items-stretch gap-2 grow shrink basis-auto px-[29px] py-[18px] rounded-full border-[rgba(91,114,71,1)] border-solid max-md:px-5 hover:bg-[rgba(91,114,71,0.05)] transition-colors">
                   <div className="flex min-h-[18px] items-center overflow-hidden justify-center">
                     <img
-                      src="https://i.ibb.co/hJPFLkRR/20250528-1900-Premium-Toothbrush-Handle-remix-01jwbsvspgenr9xzxb54xsv2c0-1.png?placeholderIfAbsent=true"
+                      src="?placeholderIfAbsent=true"
                       className="aspect-[1] object-contain w-[18px] self-stretch my-auto"
                       alt="Play icon"
                     />
@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
             <div className="flex grow flex-col items-center justify-center w-full px-20 py-10 max-md:max-w-full max-md:mt-10 max-md:px-5">
               <div className="flex flex-col shadow-[0px_4px_6px_rgba(0,0,0,0.1)] relative aspect-[0.81] w-[340px] max-w-full rounded-xl">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/faa5574346da09584a7dc984c540357c97ce1bee?placeholderIfAbsent=true"
+                  src="https://i.ibb.co/hJPFLkRR/20250528-1900-Premium-Toothbrush-Handle-remix-01jwbsvspgenr9xzxb54xsv2c0-1.png?placeholderIfAbsent=true"
                   className="absolute h-full w-full object-cover inset-0"
                   alt="Nuvé toothbrush background"
                 />
