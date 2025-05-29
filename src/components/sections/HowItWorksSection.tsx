@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface StepProps {
@@ -7,11 +8,11 @@ interface StepProps {
 }
 
 const Step: React.FC<StepProps> = ({ number, description, bgColor }) => (
-  <div className="flex items-stretch gap-6 flex-wrap mt-6 pr-20 max-md:pr-5">
-    <div className={`${bgColor} text-white whitespace-nowrap w-10 h-10 pt-2.5 pb-[17px] px-[15px] rounded-full`}>
+  <div className="flex items-start gap-4 sm:gap-6 mt-4 sm:mt-6 pr-4 sm:pr-20">
+    <div className={`${bgColor} text-white whitespace-nowrap w-8 h-8 sm:w-10 sm:h-10 pt-1.5 sm:pt-2.5 pb-3 sm:pb-[17px] px-3 sm:px-[15px] rounded-full flex-shrink-0 text-sm sm:text-base flex items-center justify-center`}>
       {number}
     </div>
-    <div className="text-black leading-none grow shrink-0 basis-0 w-fit py-1.5">
+    <div className="text-black leading-relaxed text-base sm:text-xl py-1 sm:py-1.5">
       {description}
     </div>
   </div>
@@ -37,32 +38,24 @@ export const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="bg-white w-full mt-2.5 p-20 max-md:max-w-full max-md:px-5">
-      <div className="text-[32px] text-black font-normal text-center leading-none pt-[7px] pb-[18px] px-[70px] max-md:max-w-full max-md:px-5">
+    <section id="how-it-works" className="bg-white w-full mt-2.5 px-4 sm:px-8 lg:px-20 py-8 sm:py-12 lg:py-20 max-md:max-w-full">
+      <div className="text-2xl sm:text-[32px] text-black font-normal text-center leading-none pt-[7px] pb-6 sm:pb-[18px] px-4 sm:px-[70px] max-md:max-w-full">
         <h2>How Nuvé Works</h2>
       </div>
-      <div className="mt-12 max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-          <div className="w-6/12 max-md:w-full max-md:ml-0">
-            <div className="w-full self-stretch text-xl font-normal m-auto max-md:max-w-full max-md:mt-10">
-              <div className="flex items-stretch gap-6 flex-wrap pr-20 max-md:pr-5">
-                <div className="bg-[rgba(91,114,71,1)] text-white whitespace-nowrap w-10 h-10 pt-2.5 pb-[17px] px-[15px] rounded-full max-md:pr-5">
-                  1
-                </div>
-                <div className="text-black leading-none grow shrink-0 basis-0 w-fit py-1.5">
-                  Press button → CO₂ mixes with paste
-                </div>
-              </div>
-              {steps.slice(1).map((step, index) => (
-                <Step key={index + 1} {...step} />
+      <div className="mt-8 sm:mt-12 max-md:max-w-full">
+        <div className="gap-5 flex flex-col lg:flex-row max-md:items-stretch">
+          <div className="w-full lg:w-6/12 max-md:w-full max-md:ml-0">
+            <div className="w-full self-stretch text-base sm:text-xl font-normal m-auto max-md:max-w-full lg:max-md:mt-10">
+              {steps.map((step, index) => (
+                <Step key={index} {...step} />
               ))}
             </div>
           </div>
-          <div className="w-6/12 ml-5 max-md:w-full max-md:ml-0">
-            <div className="flex grow flex-col items-center w-full px-20 max-md:max-w-full max-md:mt-10 max-md:px-5">
+          <div className="w-full lg:w-6/12 lg:ml-5 max-md:w-full max-md:ml-0 mt-8 lg:mt-0">
+            <div className="flex grow flex-col items-center w-full px-4 sm:px-10 lg:px-20 max-md:max-w-full">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/d36afd7c45ccc4bbf0f790e97b6ca26527b5f0da?placeholderIfAbsent=true"
-                className="aspect-[1] object-contain w-80 max-w-full rounded-[45px]"
+                className="aspect-[1] object-contain w-64 sm:w-72 lg:w-80 max-w-full rounded-[45px]"
                 alt="How Nuvé works demonstration"
               />
             </div>

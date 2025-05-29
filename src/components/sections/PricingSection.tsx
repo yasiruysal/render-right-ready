@@ -17,31 +17,31 @@ export const PricingSection: React.FC = () => {
 
   return (
     <>
-      <section id="pricing" className="bg-white flex w-full flex-col items-center font-normal justify-center mt-2.5 p-20 max-md:max-w-full max-md:px-5">
-        <div className="flex w-[684px] max-w-full flex-col items-center pt-[7px] px-1.5">
-          <h2 className="text-black text-[32px] leading-none text-center">
+      <section id="pricing" className="bg-white flex w-full flex-col items-center font-normal justify-center mt-2.5 px-4 sm:px-8 lg:px-20 py-8 sm:py-12 lg:py-20 max-md:max-w-full">
+        <div className="flex w-full max-w-[684px] flex-col items-center pt-[7px] px-1.5">
+          <h2 className="text-black text-2xl sm:text-[32px] leading-none text-center">
             Pricing & Subscription
           </h2>
-          <div className="bg-[rgba(243,233,222,1)] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] self-stretch flex w-full flex-col items-stretch mt-9 p-8 rounded-2xl max-md:max-w-full max-md:px-5">
-            <div className="self-center flex w-[334px] max-w-full gap-[40px_56px] text-center ml-[17px] px-0.5 py-[13px]">
-              <div className="text-[rgba(91,114,71,1)] text-[56px] leading-none grow shrink w-[98px] max-md:text-[40px]">
+          <div className="bg-[rgba(243,233,222,1)] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] self-stretch flex w-full flex-col items-stretch mt-6 sm:mt-9 p-4 sm:p-8 rounded-2xl max-md:max-w-full">
+            <div className="self-center flex flex-col sm:flex-row w-full max-w-[334px] gap-4 sm:gap-[40px_56px] text-center px-0.5 py-[13px]">
+              <div className="text-[rgba(91,114,71,1)] text-[40px] sm:text-[56px] leading-none max-md:text-[40px]">
                 €129
               </div>
-              <div className="text-[rgba(27,27,27,1)] text-xl leading-5 mt-5">
+              <div className="text-[rgba(27,27,27,1)] text-lg sm:text-xl leading-5 sm:mt-5">
                 Starter Kit (Handle + 4 pods)
               </div>
             </div>
-            <div className="flex flex-col items-center text-lg mt-4 px-[68px] max-md:max-w-full max-md:px-5">
-              <div className="flex w-[262px] max-w-full flex-col items-stretch">
-                <div className="flex items-stretch gap-3 text-center">
-                  <label className="flex items-center cursor-pointer">
+            <div className="flex flex-col items-center text-base sm:text-lg mt-4 px-2 sm:px-[68px] max-md:max-w-full">
+              <div className="flex w-full max-w-[262px] flex-col items-stretch">
+                <div className="flex items-start sm:items-center gap-3 text-left sm:text-center">
+                  <label className="flex items-center cursor-pointer mt-1 sm:mt-0">
                     <input
                       type="checkbox"
                       checked={subscriptionEnabled}
                       onChange={(e) => setSubscriptionEnabled(e.target.checked)}
                       className="sr-only"
                     />
-                    <div className={`w-5 h-5 rounded border-2 flex items-center justify-center ${subscriptionEnabled ? 'bg-[rgba(91,114,71,1)] border-[rgba(91,114,71,1)]' : 'border-gray-300'}`}>
+                    <div className={`w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 ${subscriptionEnabled ? 'bg-[rgba(91,114,71,1)] border-[rgba(91,114,71,1)]' : 'border-gray-300'}`}>
                       {subscriptionEnabled && (
                         <img
                           src="https://cdn.builder.io/api/v1/image/assets/TEMP/a11553b980ea9d200cf9c174585db127cdd416b0?placeholderIfAbsent=true"
@@ -51,8 +51,8 @@ export const PricingSection: React.FC = () => {
                       )}
                     </div>
                   </label>
-                  <div className="flex items-stretch gap-0.5 px-1 py-1.5">
-                    <span className="text-[rgba(27,27,27,1)] grow">
+                  <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-0.5 px-1 py-1.5">
+                    <span className="text-[rgba(27,27,27,1)]">
                       Refill subscription
                     </span>
                     <span className="text-[rgba(91,114,71,1)] leading-none">
@@ -60,8 +60,8 @@ export const PricingSection: React.FC = () => {
                     </span>
                   </div>
                 </div>
-                <div className="self-center flex w-[178px] max-w-full items-stretch gap-5 text-black justify-between mt-2 px-px">
-                  <label htmlFor="subscription-interval" className="leading-none text-center my-auto">
+                <div className="self-center flex w-full max-w-[178px] items-center gap-3 sm:gap-5 text-black justify-center mt-3 sm:mt-2 px-px">
+                  <label htmlFor="subscription-interval" className="leading-none text-center">
                     Every
                   </label>
                   <div className="relative">
@@ -88,7 +88,7 @@ export const PricingSection: React.FC = () => {
           </div>
           <button 
             onClick={handlePreOrderClick}
-            className="bg-[rgba(91,114,71,1)] w-[190px] max-w-full text-lg text-white text-center mt-8 px-[33px] py-5 rounded-full max-md:px-5 hover:bg-[rgba(81,104,61,1)] transition-colors"
+            className="bg-[rgba(91,114,71,1)] w-full max-w-[190px] text-base sm:text-lg text-white text-center mt-6 sm:mt-8 px-6 sm:px-[33px] py-4 sm:py-5 rounded-full hover:bg-[rgba(81,104,61,1)] transition-colors"
           >
             Pre-Order Nuvé
           </button>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface FeatureCardProps {
@@ -8,18 +9,18 @@ interface FeatureCardProps {
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, iconAlt }) => (
-  <div className="bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex grow flex-col items-stretch font-normal w-full pt-8 pb-[86px] px-8 rounded-2xl max-md:mt-10 max-md:px-5">
+  <div className="bg-white shadow-[0px_2px_4px_rgba(0,0,0,0.1)] flex grow flex-col items-stretch font-normal w-full pt-6 sm:pt-8 pb-8 sm:pb-[86px] px-4 sm:px-8 rounded-2xl max-md:mt-6">
     <img
       src={icon}
       className="aspect-[1] object-contain w-[30px] self-center"
       alt={iconAlt}
     />
-    <h3 className="text-2xl text-black mt-4 mx-[18px] pt-[5px] pb-[11px] max-md:mx-2.5">
+    <h3 className="text-xl sm:text-2xl text-black mt-4 mx-2 sm:mx-[18px] pt-[5px] pb-[11px] text-center">
       {title}
     </h3>
-    <div className="flex flex-col items-center text-lg text-[rgba(27,27,27,1)] text-center mt-2 pt-1 pb-2.5 px-[15px]">
+    <div className="flex flex-col items-center text-base sm:text-lg text-[rgba(27,27,27,1)] text-center mt-2 pt-1 pb-2.5 px-2 sm:px-[15px]">
       {description.map((line, index) => (
-        <div key={index} className={index > 0 ? "mt-[11px]" : ""}>
+        <div key={index} className={index > 0 ? "mt-2 sm:mt-[11px]" : ""}>
           {line}
         </div>
       ))}
@@ -56,13 +57,11 @@ export const FeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section id="features" className="bg-[rgba(243,233,222,1)] flex w-full flex-col items-stretch justify-center mt-2.5 px-[70px] py-[74px] max-md:max-w-full max-md:px-5">
+    <section id="features" className="bg-[rgba(243,233,222,1)] flex w-full flex-col items-stretch justify-center mt-2.5 px-4 sm:px-8 lg:px-[70px] py-8 sm:py-12 lg:py-[74px] max-md:max-w-full">
       <div className="pt-0.5 pb-2.5 px-1.5 max-md:max-w-full">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
+        <div className="gap-4 sm:gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
-            <div key={index} className="w-3/12 max-md:w-full max-md:ml-0">
-              <FeatureCard {...feature} />
-            </div>
+            <FeatureCard key={index} {...feature} />
           ))}
         </div>
       </div>

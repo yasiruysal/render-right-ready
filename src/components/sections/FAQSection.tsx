@@ -9,16 +9,16 @@ interface FAQItemProps {
 }
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle }) => (
-  <div className="bg-white border border flex w-full flex-col items-stretch justify-center mt-5 px-[25px] py-[21px] rounded-xl border-solid max-md:max-w-full max-md:px-5">
+  <div className="bg-white border border flex w-full flex-col items-stretch justify-center mt-4 sm:mt-5 px-4 sm:px-[25px] py-4 sm:py-[21px] rounded-xl border-solid max-md:max-w-full">
     <button
-      className="flex w-full items-stretch gap-5 flex-wrap justify-between px-px py-[5px] max-md:max-w-full"
+      className="flex w-full items-center gap-3 sm:gap-5 justify-between px-px py-[5px] max-md:max-w-full text-left"
       onClick={onToggle}
       aria-expanded={isOpen}
     >
-      <span className="text-black text-xl font-normal leading-none text-center">
+      <span className="text-black text-lg sm:text-xl font-normal leading-tight">
         {question}
       </span>
-      <div className="flex min-h-5 items-center overflow-hidden justify-center">
+      <div className="flex min-h-5 items-center overflow-hidden justify-center flex-shrink-0">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff70eb0f3da672d062873a7519b538f89c10fc48?placeholderIfAbsent=true"
           className={`aspect-[0.85] object-contain w-[17px] self-stretch my-auto transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -27,8 +27,8 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle })
       </div>
     </button>
     {isOpen && (
-      <div className="mt-4 px-2 pb-2">
-        <p className="text-gray-700 text-lg leading-relaxed whitespace-pre-line">
+      <div className="mt-3 sm:mt-4 px-1 sm:px-2 pb-2">
+        <p className="text-gray-700 text-base sm:text-lg leading-relaxed whitespace-pre-line">
           {answer}
         </p>
       </div>
@@ -73,12 +73,12 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="bg-[rgba(243,233,222,1)] flex w-full flex-col items-center justify-center mt-2.5 p-20 max-md:max-w-full max-md:px-5">
-      <div className="flex w-[672px] max-w-full flex-col items-stretch pt-[7px]">
-        <h2 className="text-black text-[32px] font-normal leading-none text-center self-center">
+    <section id="faq" className="bg-[rgba(243,233,222,1)] flex w-full flex-col items-center justify-center mt-2.5 px-4 sm:px-8 lg:px-20 py-8 sm:py-12 lg:py-20 max-md:max-w-full">
+      <div className="flex w-full max-w-[672px] flex-col items-stretch pt-[7px]">
+        <h2 className="text-black text-2xl sm:text-[32px] font-normal leading-none text-center self-center">
           FAQ
         </h2>
-        <div className="mt-[47px] max-md:max-w-full max-md:mt-10">
+        <div className="mt-8 sm:mt-[47px] max-md:max-w-full">
           {faqItems.map((item, index) => (
             <FAQItem
               key={index}
